@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_ERP"
+        android:icon="@drawable/baseline_app_settings_alt_24"
+        android:title="ERP" />
+
+    <item
+        android:id="@+id/navigation_Query"
+        android:icon="@drawable/discusiion"
+        android:title="Query" />
+
+    <item
+        android:id="@+id/navigation_post"
+        android:icon="@drawable/question"
+        android:title="Ask" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:title="Setting"
+        android:icon="@drawable/user"/>
+
+</menu>

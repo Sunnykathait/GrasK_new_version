@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="#26DBEC"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/profileImageView"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usernameTextView"
+                    android:layout_alignBottom="@+id/usernameTextView"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="-19dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="12-10-2001" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/contentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="can anyone tell me how does the bus timing works ? Is there a fixed time on every bus or busses can go as they want at any time ?"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/commentImageView"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/baseline_insert_comment_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/forwardImageView"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/baseline_forward_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/reportImageView"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/baseline_report_24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

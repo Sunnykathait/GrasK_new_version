@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "7052147321",
+    "project_id": "grask-updated",
+    "storage_bucket": "grask-updated.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7052147321:android:810ad1913d6ea0a07772a8",
+        "android_client_info": {
+          "package_name": "com.example.graskupdated"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5am79VAsH7pzl5suxUO9quYNRWOk8TQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

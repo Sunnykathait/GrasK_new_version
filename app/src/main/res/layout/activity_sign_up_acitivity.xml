@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpAcitivity">
+
+    <LinearLayout
+        android:id="@+id/LL_linkNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Confirm Phone Number Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center"
+            android:text="Confirm your phone number"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_StudentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your registered phone number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_otp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:text="Send OTP" />
+
+            <Button
+                android:id="@+id/btn_goBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:text="Go back" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Confirm OTP" />
+
+    </LinearLayout>
+
+    <!-- Student Information Section -->
+    <LinearLayout
+        android:id="@+id/LL_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="39dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- Student Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="155dp"
+            android:layout_height="158dp"
+            android:padding="10dp"
+            android:src="@drawable/gehulogo" />
+
+        <!-- Enter Student ID Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Enter your student id"
+            android:textSize="20sp" />
+
+        <!-- Student ID Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_StudentID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Student id" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Fetch Information Button -->
+        <Button
+            android:id="@+id/btn_FI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Fetch information" />
+
+        <!-- Student Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Student Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_studentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="....................."
+                android:textSize="16sp" />
+
+            <!-- Year / Semester -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year / Semester"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_yearSEM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="............."
+                android:textSize="16sp" />
+
+            <!-- Course -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_Course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=".............."
+                android:textSize="16sp" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_marginHorizontal="30dp"
+                    android:id="@+id/btn_YTIM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Yes, this is me" />
+
+                <Button
+                    android:layout_marginHorizontal="30dp"
+                    android:id="@+id/btn_WI"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wrong information" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="100dp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Student name" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Student ID" />
+
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="Phone number" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_userNameSetting"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Anirudh chauhan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_userStudentIDSetting"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="20011717"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txt_userPhoneNumberSetting"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="9634074267"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tt_YOURPOST"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Your Post"
+                android:textSize="30dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RV_yourPost"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/tt_YOURPOST"
+                android:layout_width="match_parent"
+                android:layout_above="@+id/txt_moreSettingBTN"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:background="@drawable/bg_topbar_white"
+                android:textColor="#000000"
+                android:text="More options"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/txt_moreSettingBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

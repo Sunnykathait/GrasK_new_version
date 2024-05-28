@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CreateFragment">
+
+   <RelativeLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <TextView
+          android:id="@+id/txt_haveAConfession"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="20dp"
+          android:fontFamily="sans-serif-thin"
+          android:text="HAVE A "
+          android:textColor="@color/black"
+          android:textSize="30dp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_toEndOf="@+id/txt_haveAConfession"
+          android:layout_toRightOf="@+id/txt_haveAConfession"
+          android:fontFamily="sans-serif-medium"
+          android:text="ISSUE ?"
+          android:textColor="@color/black"
+          android:textSize="30dp" />
+
+
+      <TextView
+          android:id="@+id/txt_writeQueryhere"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_below="@+id/txt_haveAConfession"
+          android:fontFamily="sans-serif-medium"
+          android:textColor="@color/black"
+          android:textSize="20dp"
+          android:text="Write your issue here"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/edt_inputLayout"
+          android:layout_margin="20dp"
+          android:layout_below="@+id/txt_writeQueryhere"
+          android:layout_width="match_parent"
+          android:hint="here"
+          android:layout_height="wrap_content">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/edt_confessionTxt"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"/>
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+
+      <TextView
+          android:id="@+id/txt_identity"
+          android:textColor="@color/black"
+          android:textSize="20dp"
+          android:text="Do you want to show your identity ?"
+          android:layout_marginStart="20dp"
+          android:layout_below="@id/edt_inputLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <Switch
+          android:id="@+id/swtch_showIdentity"
+          android:text="Do not reveal my identity"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="10dp"
+          android:layout_below="@id/txt_identity"
+          android:layout_width="230dp"
+          android:layout_height="wrap_content"/>
+
+      <LinearLayout
+          android:id="@+id/LL_btnPost"
+          android:layout_marginHorizontal="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_below="@id/swtch_showIdentity"
+          android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_height="wrap_content">
+
+         <Button
+             android:id="@+id/btn_postConfession"
+             android:text="Post"
+             android:layout_gravity="right"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+      <com.airbnb.lottie.LottieAnimationView
+          app:lottie_rawRes="@raw/studentanimation"
+          android:layout_width="match_parent"
+          android:layout_alignParentBottom="true"
+          app:lottie_autoPlay="true"
+          app:lottie_loop="true"
+          android:layout_below="@+id/LL_btnPost"
+          android:layout_height="match_parent"/>
+
+   </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#E49035"
+    app:cardElevation="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_faqQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"
+            android:text="Hey can anyone tell me where can i find 1st year HOD's sir office ?"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        <LinearLayout
+            android:id="@+id/LL_showFAQTxt"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/txt_faqQuestion"
+            android:layout_width="match_parent"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_showFaq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bg_topbar"
+                android:fontFamily="sans-serif-medium"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="2dp"
+                android:text="Show"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_faqAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LL_showFAQTxt"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-black"
+            android:padding="10dp"
+            android:text="You can find their office in 1st year department. Or if he may not there you can get his contact
+                        details from the teacher portfolio page."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
